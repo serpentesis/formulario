@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(221, 210, 196);
+    text-shadow: 0px -5px 12px #d2002ab2;
+    color: #432306;
+}
+
+fieldset {
+    box-shadow: 5px 5px 2px #faf4f4;
+}
+
+input {
+    box-shadow: 2px -2px 15px #dc94b3;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: #432306 2px solid;
+
+}
+
+button {
+    padding: 18px;
+    border-radius: 5px;
+    color: #432306;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    border: #432306 2px solid;
+
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    background-color: #dc94b3b4;
+    font-size: 16px;
+    animation-delay: 0.5s;
+    transition: 0.10s;
+    rotate: 2deg;
+    border: #432306 2px solid;
+}

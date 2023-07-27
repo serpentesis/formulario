@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandra Moura//Serpentesis">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário (aula 4)</title>
+</head>
+
+<body>
+    <center>
+
+        <h1>Formulário</h1>
+        <p> Nome: <input type="text" name="nome" id="inome" placeholder="Digite seu nome"> </p>
+        <p> Sobrenome: <input type="text" name="Sobrenome" id="isobrenome" placeholder="Digite seu nome"> </p>
+        <br>
+        <p><input type="submit" value="Enviar"></p>
+
+        <br><br>
+
+        <h1> Formulário de Validação </h1>
+        <fieldset> <!-- estrutura do campo de texto -->
+            <legend> Dados Pessoais </legend> <!-- setar título da caixa de texto em cima-->
+            <form action="main.js" method="get"> <!-- onde o forms é salvo-->
+                <p> <label for="idnome"> Nome: </label> <!-- label = texto que aparece -->
+                    <input type="text" name="nome" id="idnome" placeholder="Digite seu nome" minlength="2" maxlength="30" required name="nome">
+                </p> <!-- mínima e máxima quantidade de letras // required está ligado com name para requisitar o nome -->
+
+                <br>
+
+                <p><label for="idsobrenome"> Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="idsobrenome" placeholder="Digite seu sobrenome" minlength="5" maxlength="30" required name="sobrenome">
+                </p>
+
+                <br>
+
+                <p><label for="idemail"> E-mail: </label>
+                    <input type="email" name="email" id="idemail" placeholder="Digite seu e-mail" required name="email">
+                </p>
+
+                <br>
+
+                <p><label for="idcidade"> Cidade: </label>
+                    <input type="idsn" name="cidade" id="idcidade" placeholder="Digite sua cidade" required name="cidade">
+                </p>
+
+                <br>
+
+                <p><label for="idnascimento"> Data de Nascimento: </label>
+                    <input type="date" name="nascimento" id="idnascimento" required name="nascimento">
+                </p>
+
+                <br>
+
+                <p><label for="idtel"> Contato: </label>
+                    <input type="tel" name="telefone" id="idcontato" placeholder="Digite um telefone" required name="contato">
+                </p>
+
+                <br>
+
+                <p><label for="idsenha"> Senha </label>
+                    <input type="password" name="senha" id="idsenha" placeholder="Crie uma senha" required>
+                </p>
+
+            </form>
+
+            <br><br><br>
+
+            <button type="submit" value="Enviar"> Enviar </button>
+        </fieldset>
+
+    </center>
+</body>
+
+</html>
